@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-SERIES</title>
+    <link rel= "stylesheet" href="apishow.css">
+    <style>
+        
+
+    
+   
+
+
+
+    </style>
+</head>
+<body>
+    <div id="drago"></div>
+
+        <!-- <script src = "apishow.js"></script> -->
+
+        <script>
+            
+
+            fetch('https://api.tvmaze.com/shows')
+            .then(response => response.json())
+            
+            .then(data => {
+                
+                data.forEach(show => {// forEach ft une boucle 
+
+                    const characterDiv = document.createElement("div");
+                    characterDiv.classList.add('character'); //list classe les characteres 
+                    characterDiv.innerHTML = `
+                   
+                    
+                    <form action="${show.url}" method="get" target="_blank">
+                        <a href ${show.url}><img src = "${show.image.medium}" /></a>
+                    <h2>${show.name}</h2>
+                    <form action="${show.url}" method="get" target="_blank">
+                        <button type="submit">${show.name}</button>
+                       
+                    </form>
+                     <p>${show.language}</p>
+                     <q>${show.status}</q>
+                     
+                    `;
+                 
+
+                    document.getElementById("drago").appendChild(characterDiv) //utiliser l'id et la variable qu'on a ccrée 
+            })
+        })
+
+        </script>
+        
+      
+
+
+    </body>
+    </html>
+
+
+    //essayez d'aller plus lo
