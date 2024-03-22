@@ -4,72 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API-Film Ghibli</title>
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
-    <link href="apipr.js" rel="stylesheet" />
+    
+    
     <link rel= "stylesheet" href="apipr.css">
     <style>
-        
-        /* #drago{
-            display: -ms-flexbox ;
-            flex-wrap: wrap;
-        }
-
-        .character{
-            border: 1px solid purple;
-            padding: 40px
-        }
-
-        .character img{
-            max-height: 200px; */
-
-        }
-
-    
-   
-
-
 
     </style>
 </head>
 <body>
-
-    
-
      <div id="drago"></div>
-        <script>
-            fetch('https://ghibliapi.vercel.app/films')
-            .then(response => response.json())
-            
-            .then(data => {
-                
-                data.forEach(movie => {// forEach ft une boucle 
-
-                    const characterDiv = document.createElement("div");
-                    characterDiv.classList.add('character'); //list classe les characteres 
-                    characterDiv.innerHTML = `
-                       
-                    
-                    <a href = ${movie.title}><h1>${movie.title}</h1></a>
-                
-                     <p>${movie.description}</p>
-                     <d>${movie.release_date}</d>
-                     
-                    `;
-                    
-
-                    document.getElementById("drago").appendChild(characterDiv) //utiliser l'id et la variable qu'on a ccrée 
-                        
-
-            })
-        })
-
-
-
-
-        </script>
-            
-            
-
-
+        <script src = "apipr.js">
+            </script>
 </body>
 </html>
