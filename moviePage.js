@@ -10,11 +10,11 @@ fetch('https://ghibliapi.vercel.app/films')
                     characterDiv.innerHTML = `
                        
                     
-                    <a href="/apipr1.html?id=${movie.id}" class="button">${movie.title}</a>
-    
                     
-                     <p>${movie.description}</p>
-                     <d>${movie.release_date}</d>
+    
+                    <img ${movie.image}>
+                     <p>${movie.original_title}</p>
+                     <d>${movie.rt_score}</d>
                      
                     `;
                     
@@ -24,5 +24,3 @@ fetch('https://ghibliapi.vercel.app/films')
 
             })
         })
-
-
