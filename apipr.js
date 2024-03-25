@@ -10,7 +10,7 @@ fetch('https://ghibliapi.vercel.app/films')
                     characterDiv.innerHTML = `
                        
                     
-                    <a href="/apipr1.html?id=${movie.id}" class="button">${movie.title}</a>
+                    <a href="/moviePage.html?id=${movie.id}"  target="_blank class="button">${movie.title}</a>
     
                     
                      <p>${movie.description}</p>
@@ -20,9 +20,11 @@ fetch('https://ghibliapi.vercel.app/films')
                     
 
                     document.getElementById("drago").appendChild(characterDiv) //utiliser l'id et la variable qu'on a ccrée 
-                        
+                    // Ajouter un gestionnaire d'événements de clic à l'élément div
+        //   div.addEventListener("click", () => {
+        //     // Rediriger vers la page de détails du Pokémon
+        //     window.location.href = `moviePage.html?id=${movie.id}`;    
 
-            })
+        //     })
         })
-
-
+    })
