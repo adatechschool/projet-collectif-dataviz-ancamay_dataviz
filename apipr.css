@@ -59,7 +59,22 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-
+.button_2 {
+  position: absolute;
+  top: 15%;
+  left: 4px;
+  transform: translateY(-50%);
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  height: 50px;
+  margin:-20px 2px 4px;
+  cursor: pointer;
+  z-index: 1;
+}
 .character {
 flex: 1 1 calc(50% - 2rem); /* Pour occuper la moitié de la largeur disponible, moins les marges */
 margin: 2rem; /* Marge pour espacement entre les éléments */
@@ -109,4 +124,10 @@ transition: all .2s linear;
 .Logo_Ghibli {
   width : 50%;
   height : auto;
+}
+
+h2{
+
+
+  
 }

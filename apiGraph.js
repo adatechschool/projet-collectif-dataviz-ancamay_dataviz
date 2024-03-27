@@ -219,6 +219,7 @@
       data: {
         labels: Object.keys(terrainCounts) , // Les labels sont les genres
         datasets : [{
+          label: "Terrain",
           data: Object.values(terrainCounts), // Les données sont le nombre d'occurrences de chaque genre
           backgroundColor: colors
         }]

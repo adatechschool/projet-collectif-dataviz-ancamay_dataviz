@@ -31,13 +31,47 @@ opacity: 0.60;
   display: block;
   margin: 1rem auto;
   max-width: 100%;
-  height: 500px;
-  width: 400px;
+  height: 450px;
+  width: 350px;
   border-image-slice: 30 fill;
   /* border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 60; */
 
   
 }
+.button {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  border-radius : 10px ;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  height: 50px;
+  margin:-20px 2px 4px;
+  cursor: pointer;
+  border: none
+}
+h2{
+  border-radius: 10px;
+  text-align: center;
+    padding:  1.5rem 2.5rem;
+    margin: 0 0 1rem 70rem ;
+    font-size: 1.5rem;
+    background-image: linear-gradient(120deg, #84fab0 0%,  #8fd3f4 100%);
+    width: 10%;
+    color: rgb(255, 255, 255);
+    opacity: 0.92;
+    position: fixed; /* ou absolute selon vos besoins */
+    bottom: 0;
+    right: 0;
+
+}
+
+
+
+
+
 p{
   border-radius: 10px;
   text-align: center;
